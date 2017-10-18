@@ -28,7 +28,8 @@ DropzoneComponent = React.createClass({
     getDjsConfig: function () {
         var options,
             defaults = {
-                url: this.props.config.postUrl ? this.props.config.postUrl : null
+                url: this.props.config.postUrl ? this.props.config.postUrl : null,
+                headers: this.props.config.headers ? this.props.config.headers : null
             };
 
         if (this.props.djsConfig) {
